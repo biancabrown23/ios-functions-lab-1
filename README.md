@@ -155,6 +155,19 @@ If the number is a multiple of 5, print `"Buzz"` instead of the number
 If the number is a multiple of 3 AND 5, print `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
 
+func fizzbuzzOperation (x: Int){
+for i in 0...x {
+if (i % 3 == 0) && (i % 5 == 0) {
+print("Fizzbuzz")
+} else if (i % 3 != 0) && (i % 5 == 0) {
+print("Fizz")
+} else if (i % 3 == 0) && (i % 5 != 0) {
+print("Buzz")
+}
+}
+}
+
+fizzbuzzOperation(x: 100)
 
 ## Question 12
 
